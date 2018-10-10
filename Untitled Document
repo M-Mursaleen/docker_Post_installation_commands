@@ -1,0 +1,21 @@
+To  remove sudo from docker commands
+
+1: Add docker group 
+  
+sudo groupadd docker
+
+2: Add user in docker
+
+sudo gpasswd -a user_name docker
+
+3: Restart sudo service
+
+sudo service docker restart
+
+4: Set docker host
+
+export DOCKER_HOST=127.0.0.1:8000/
+
+
+
+
